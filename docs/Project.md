@@ -30,14 +30,17 @@ Each Milestone will be documented to allow other programmers to replicate the re
 
 ### 3. Basic Student Views
 
-* Custom views allow users to interact with student data.
-* Views - Add, List, Edit, Delete, Details
+* Custom views allow student to interact with lessons.
+* List Lessons - show a list of all lessons in database with links to slides and notes
+* Lesson Slides  - shows a single lesson as slides
+* Lesson Notes - shows a single lesson as web page of notes
 
 ### 4. Documents
 
 * All of the steps for the Milestones are documented in the **docs** folder.
 * A simple document viewer allows the project documents (written in Markdown) to be 
 displayed within the app.
+* Doc viewer is used to teach lessons for how to create the Sensei App.
 
 
 ## MyBook Server

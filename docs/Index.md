@@ -13,6 +13,7 @@ Please acknowledge this work if you build upon it.
 ### Table of Contents
 
 * [Sensei Project](Project.md)
+* [Django Setup](DjangoContext.md)
 * [Sensei App](App.md)
 * [Sensei Data](Data.md)
 * [Sensei Models](Models.md)
