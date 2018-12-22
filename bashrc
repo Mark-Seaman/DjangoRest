@@ -13,7 +13,7 @@ figlet 'Rest Hammer'
 # Alias
 alias edit="brackets ."
 alias rc='. ~/Rest/bashrc'
-alias run='djr runserver & open /Applications/Google\ Chrome.app/http://localhost:8000/'
+alias run='open /Applications/Google\ Chrome.app/ http://localhost:8000/; djr runserver'
 alias status='git status'
 
 
