@@ -25,8 +25,8 @@ Each Milestone will be documented to allow other programmers to replicate the re
 
 * Models are created for Course, Student, Lesson.
 * Admin views are used to create objects without writing any custom UI code.
-* Interactive testing is done on objects.
 * A few simple objects are created to try out the models.
+* Interactive testing is done on objects.
 
 ### 3. Basic Student Views
 

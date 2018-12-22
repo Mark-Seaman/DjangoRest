@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from sensei.views import ListLessons
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', ListLessons.as_view(), name='home'),
 ]

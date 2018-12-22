@@ -4,6 +4,7 @@
 
 # Variables
 export PATH=~/Rest:$PATH
+export p=~/Rest
 
 
 # Banner
@@ -23,6 +24,7 @@ function djr {
     cd ~/Rest
     python manage.py $*
 }
+
 function commit {
     git add . && git commit -m "$*" && git pull && git push
 }
