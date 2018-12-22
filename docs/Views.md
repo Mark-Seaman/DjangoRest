@@ -39,23 +39,33 @@ The views work off the Rest API interface
 * Delete - Delete   - admin/sensei/lesson/id/delete/
 
 
-## Custom Views
+## Setup Admin Views
 
-### Create views
-
-```
-e sensei/models.py        # Class student
-e sensei_project/urls.py  # admin, include
-e sensei/urls.py          
-e sensei/views.py         # StudentListView
-e sensei/student_list.py  # Students
-```
-
-
-### Run the server
+Edit sensei/admin.py
 
 ```
-dj migrate
-dj runserver
+from django.contrib import admin
+from .models import Course, Lesson, Student
+
+admin.site.register(Course)
+admin.site.register(Student)
+admin.site.register(Lesson)
 ```
+
+
+## Test the Admin Views
+
+Create a superuser
+
+```
+$ python manage.py createsuperuser
+```
+
+Run the server
+
+```
+$ python manage.py runserver
+```
+
+Browse to admin page "http://localhost:8000/admin".  Login to edit the objects.
 

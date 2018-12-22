@@ -1,15 +1,13 @@
 # Sensei App
 
 
-# Create sensei app
+## Create sensei app
+
 Use the Django **startapp** script to build the directory structure for the **sensei**
 application.
 
 ```
 $ python manage.py startapp sensei
-$ 
-$ python manage.py createsuperuser
-$ 
 ```
 
 Directory Structure
@@ -36,6 +34,8 @@ Directory Structure
 
 ```
 
+## Setup Django App
+
 Edit sensei_project/settings.py
 
 ```
@@ -53,24 +53,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-Edit sensei/admin.py
-
-```
-from django.contrib import admin
-from .models import Course, Lesson, Student
-
-admin.site.register(Course)
-admin.site.register(Student)
-admin.site.register(Lesson)
-```
-
-## Test the Admin Views
-
-Create a superuser
-
-```
-$ python manage.py createsuperuser
-```
+## Test App
 
 Run the server
 
@@ -78,5 +61,5 @@ Run the server
 $ python manage.py runserver
 ```
 
-Browse to admin page "http://localhost:8000/admin".  Login to edit the objects.
+Browse to home page "http://localhost:8000". 
 

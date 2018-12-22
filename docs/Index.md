@@ -14,7 +14,7 @@ Please acknowledge this work if you build upon it.
 
 * [Sensei Project](Project.md)
 * [Sensei App](App.md)
-* [Sensei Models](Models.md)
 * [Sensei Data](Data.md)
+* [Sensei Models](Models.md)
 * [Sensei Views](Views.md)
 * [Django Rest Framework](Django-Rest.md)
