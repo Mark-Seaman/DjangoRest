@@ -12,9 +12,9 @@ Please acknowledge this work if you build upon it.
 
 ### Table of Contents
 
-* [Project](Project.md)
-* [Sensei App](SenseiApp.md)
-* [Sensei Models](SenseiModels.md)
+* [Sensei Project](Project.md)
+* [Sensei App](App.md)
+* [Sensei Models](Models.md)
+* [Sensei Data](Data.md)
+* [Sensei Views](Views.md)
 * [Django Rest Framework](Django-Rest.md)
-* [Data](Data.md)
-* [Views](Views.md)
