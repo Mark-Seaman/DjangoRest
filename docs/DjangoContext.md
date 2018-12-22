@@ -15,10 +15,8 @@ Build a location for our project
 
 ```
 $ cd
-$ mkdir Rest
-$ cd Rest
-$ mkdir library
-$ cd library
+$ mkdir Rest Rest/library
+
 ```
 
 ## pipenv
@@ -26,14 +24,15 @@ $ cd library
 Use **pipenv** to create a new virtual environment for our project.
 
 ```
-pip install pipenv
-pipenv install django
+$ pip install pipenv
+$ cd Rest/library
+$ pipenv install django
 ```
 
 Run the new virtual environment as a subshell.  Use **exit** to end the development session.
 
 ```
-pipenv shell
+$ pipenv shell
 ```
 
 
@@ -67,8 +66,7 @@ This will create to following directory structure.
 Create the database
 
 ```
-dj migrate
-dj runserver
+$ python manage.py migrate
 ```
 
 Run the web server
@@ -79,3 +77,27 @@ $ python manage.py runserver
 
 Browse to home page "http://localhost:8000". 
 
+
+## Linux Shell Context
+
+Configure version control.   Clone the Git repo **git@github.com:Mark-Seaman/DjangoRest.git**.
+
+Now clone your new repo 
+
+```
+$ git clone git@github.com:your-name/DjangoRest.git.
+```
+
+This will let you push code changes to your own github repo.
+
+Create a shell function to perform a large commit.  This will make it easy to update your
+remote code with a single command.
+
+```
+$ function commit {
+    git add . && git commit -m "$*" && git pull && git push
+}
+
+# Create a commit with a commit message
+$ commit All my recent changes
+```
