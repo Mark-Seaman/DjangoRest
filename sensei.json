@@ -1,0 +1,55 @@
+[
+    {
+        "fields": {
+            "author": "Mark Seaman",
+            "description": "University of Northern Colorado\r\nMonfort College of Business\r\nBusiness Administration Computer Science \r\nBACS 200 \r\nWeb Design and Development for Small Business",
+            "name": "bacs200",
+            "teacher": "Mark Seaman",
+            "title": "UNC BACS 200 - Web Dev for Small Business"
+        },
+        "model": "sensei.course",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "course": 1,
+            "domain": "unco-bacs.org",
+            "name": "Mark Seaman"
+        },
+        "model": "sensei.student",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "content": "https://shrinking-world.com/unc/bacs200/01",
+            "course": 1,
+            "date": "2019-01-07",
+            "lesson": 1,
+            "title": "New Literacy"
+        },
+        "model": "sensei.lesson",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "content": "https://shrinking-world.com/unc/bacs200/02",
+            "course": 1,
+            "date": "2019-01-09",
+            "lesson": 2,
+            "title": "Web Hosting"
+        },
+        "model": "sensei.lesson",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "content": "https://shrinking-world.com/unc/bacs200/03",
+            "course": 1,
+            "date": "2019-01-11",
+            "lesson": 3,
+            "title": "WordPress"
+        },
+        "model": "sensei.lesson",
+        "pk": 3
+    }
+]

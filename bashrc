@@ -15,6 +15,7 @@ alias edit="brackets ."
 alias rc='. ~/Rest/bashrc'
 alias run='open /Applications/Google\ Chrome.app/ http://localhost:8000/; djr runserver'
 alias status='git status'
+alias dump='djr dumpdata sensei|python -m json.tool'
 
 
 # Function
