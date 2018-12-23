@@ -15,23 +15,23 @@ figlet 'Rest Hammer'
 alias edit="brackets ."
 alias rc='. ~/Rest/bashrc'
 alias run='open /Applications/Google\ Chrome.app/ http://localhost:8000/; djr runserver'
-alias status='git status'
+alias gs='git status'
 alias dump='djr dumpdata sensei|python -m json.tool > library_project/sesei.json'
-
+unalias co
 
 # Function
-function djr {
+function dj {
     cd ~/Rest
     python manage.py $*
 }
 
-function commit {
+function co {
     git add . && git commit -m "$*" && git pull && git push
 }
 
 
 # Prompt
-. $p/bin/bash-prompt
+. ~/Projects/MyBook/bin/bash-prompt
 
 
 # Directory
@@ -45,4 +45,14 @@ ls
 echo
 echo "Active python = `which python`"
 echo
+
+
+echo 'REST COMMANDS:
+    co
+    dj
+    dump
+    edit
+    rc
+    run
+    gs'
 
