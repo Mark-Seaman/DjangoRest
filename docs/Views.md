@@ -1,65 +1,45 @@
-# Sensei Views
+# Sensei Rest API 
 
-## Course Views
-
-Django admin is used to present the Course data models to the user.  This means that only a
-superuser can see or modify the Course data.
-
-The views work off the Rest API interface
-
-* Add    - Post     - admin/sensei/course/
-* List   - Get      - admin/sensei/course/
-* Edit   - Put      - admin/sensei/course/id/change/
-* Delete - Delete   - admin/sensei/course/id/delete/
-
-
-## Student Views
+## Course API
 
 Django admin is used to present the Course data models to the user.  This means that only a
 superuser can see or modify the Course data.
 
 The views work off the Rest API interface
 
-* Add    - Post     - admin/sensei/student/
-* List   - Get      - admin/sensei/student/
-* Edit   - Put      - admin/sensei/student/id/change/
-* Delete - Delete   - admin/sensei/student/id/delete/
+* Add    - Post     - api/sensei/course/
+* List   - Get      - api/sensei/course/
+* Edit   - Put      - api/sensei/course/id/change/
+* Delete - Delete   - api/sensei/course/id/delete/
 
 
-## Lesson Views
+## Student API
 
 Django admin is used to present the Course data models to the user.  This means that only a
 superuser can see or modify the Course data.
 
 The views work off the Rest API interface
 
-* Add    - Post     - admin/sensei/lesson/
-* List   - Get      - admin/sensei/lesson/
-* Edit   - Put      - admin/sensei/lesson/id/change/
-* Delete - Delete   - admin/sensei/lesson/id/delete/
+* Add    - Post     - api/sensei/student/
+* List   - Get      - api/sensei/student/
+* Edit   - Put      - api/sensei/student/id/change/
+* Delete - Delete   - api/sensei/student/id/delete/
 
 
-## Setup Admin Views
+## Lesson API
 
-Edit sensei/admin.py
+Django admin is used to present the Course data models to the user.  This means that only a
+superuser can see or modify the Course data.
 
-```
-from django.contrib import admin
-from .models import Course, Lesson, Student
+The views work off the Rest API interface
 
-admin.site.register(Course)
-admin.site.register(Student)
-admin.site.register(Lesson)
-```
+* Add    - Post     - api/sensei/lesson/
+* List   - Get      - api/sensei/lesson/
+* Edit   - Put      - api/sensei/lesson/id/change/
+* Delete - Delete   - api/sensei/lesson/id/delete/
 
 
-## Test the Admin Views
-
-Create a superuser
-
-```
-$ python manage.py createsuperuser
-```
+## Test the API
 
 Run the server
 
@@ -67,5 +47,5 @@ Run the server
 $ python manage.py runserver
 ```
 
-Browse to admin page "http://localhost:8000/admin".  Login to edit the objects.
+Browse to admin page "http://localhost:8000/api".  Login to edit the objects.
 
