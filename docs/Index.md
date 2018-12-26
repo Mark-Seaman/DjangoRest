@@ -17,5 +17,7 @@ Please acknowledge this work if you build upon it.
 * [Sensei App](App.md)
 * [Sensei Data](Data.md)
 * [Sensei Models](Models.md)
-* [Sensei Views](Views.md)
+* [Sensei Admin Views](Admin.md)
+* [Sensei Custom Views](Views.md)
+* [Sensei Rest API](RestApi.md)
 * [Django Rest Framework](Django-Rest.md)
