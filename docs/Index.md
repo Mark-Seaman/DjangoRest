@@ -1,4 +1,4 @@
-# Sensei Application
+# Sensei Application Guide
 
 Sensei is a Digital Classroom app intended to deliver technical training to students.  It is
 set up for use within the classroom and over the internet.

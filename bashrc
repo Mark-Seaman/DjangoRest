@@ -12,12 +12,11 @@ figlet 'Rest Hammer'
 
 
 # Alias
+alias gs='git status'
 alias edit="brackets ."
 alias rc='. ~/Rest/bashrc'
 alias run='open /Applications/Google\ Chrome.app/ http://localhost:8000/; dj runserver'
-alias gs='git status'
-alias dump='djr dumpdata sensei|python -m json.tool > project/sesei.json'
-unalias co
+alias dump='dj dumpdata sensei|python -m json.tool > project/sesei.json'
 
 # Function
 function dj {
@@ -25,6 +24,7 @@ function dj {
     python manage.py $*
 }
 
+unalias co
 function co {
     git add . && git commit -m "$*" && git pull && git push
 }

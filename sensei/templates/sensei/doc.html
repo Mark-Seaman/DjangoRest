@@ -1,18 +1,9 @@
-<!doctype html>
-<html>
+{% extends 'sensei/sensei_theme.html' %}
 
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
+{% block main %}
 
-<body>
-    <div class="container">
-        <h1>My Doc View</h1>
-        <p>Doc Path: {{ doc }}</p>
-        {% autoescape off %}
+    {% autoescape off %}
         <p>{{ text }}</p>
-        {% endautoescape %}
-    </div>
-</body>
+    {% endautoescape %}
 
-</html>
+{% endblock %}
