@@ -14,7 +14,7 @@ figlet 'Rest Hammer'
 # Alias
 alias edit="brackets ."
 alias rc='. ~/Rest/bashrc'
-alias run='open /Applications/Google\ Chrome.app/ http://localhost:8000/; djr runserver'
+alias run='open /Applications/Google\ Chrome.app/ http://localhost:8000/; dj runserver'
 alias gs='git status'
 alias dump='djr dumpdata sensei|python -m json.tool > project/sesei.json'
 unalias co
@@ -35,7 +35,7 @@ function co {
 
 
 # Directory
-cd /Users/seaman/Rest
+cd ~/Rest
 
 echo Files:
 ls 
