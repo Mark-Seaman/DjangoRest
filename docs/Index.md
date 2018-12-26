@@ -10,7 +10,7 @@ commercial use.
 Please acknowledge this work if you build upon it.
 
 
-### Table of Contents
+## Documents
 
 * [Sensei Project](Project.md)
 * [Django Setup](DjangoContext.md)
@@ -21,3 +21,10 @@ Please acknowledge this work if you build upon it.
 * [Sensei Custom Views](Views.md)
 * [Sensei Rest API](RestApi.md)
 * [Django Rest Framework](Django-Rest.md)
+
+
+## Test
+
+* [http://localhost:8000](http://localhost:8000) - Show Lessons
+* [http://localhost:8000/Index.md](http://localhost:8000/Index.md) - Show documents
+* [http://localhost:8000/api](http://localhost:8000/api/) - Show API

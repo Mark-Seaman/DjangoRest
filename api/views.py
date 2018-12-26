@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+from rest_framework import generics
+from sensei.models import Lesson
+from .serializers import LessonSerializer
 
-# Create your views here.
+class LessonAPIView(generics.ListAPIView):
+    queryset = Lesson.objects.all()
+    serializer_class = LessonSerializer
+    
