@@ -3,51 +3,47 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const list = [
-    {
-        "lesson": 1,
-        "title": "New Literacy",
-        "content": "https://shrinking-world.com/unc/bacs200/01",
-        "date": "2019-01-07",
-        "course": 1
-    },
-    {
-        "lesson": 2,
-        "title": "Web Hosting",
-        "content": "https://shrinking-world.com/unc/bacs200/02",
-        "date": "2019-01-09",
-        "course": 1
-    },
-    {
-        "lesson": 3,
-        "title": "WordPress",
-        "content": "https://shrinking-world.com/unc/bacs200/03",
-        "date": "2019-01-11",
-        "course": 1
-    }
-]
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { list };
-  }
+    
+    // Start with no lessons
+    state = {
+        lessons: []
+    }
 
-  render() {
-    return (
-      <div>
-        {
-            this.state.list.map(item => (
-                <div key={item.id}>
-                    <h1>Lesson {item.lesson}. {item.title}</h1>
-                    <p>Doc: {item.content}</p>
-                    <p>Date: {item.date}</p>
-                </div>
-            ))
-        }
-      </div>
-    );
-  }
+    // Request lessons from API
+    componentDidMount() {
+        this.getLessons();
+    }
+
+    // Get a list of lessons
+    getLessons() {
+        axios
+            .get('http://127.0.0.1:8000/api/')
+            .then(res => {
+                this.setState({lessons: res.data});
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+
+    // Draw the view with for the list of lessons
+    render() {
+        return (
+          <div>
+            {
+                this.state.lessons.map(item => (
+                    <div key={item.id}>
+                        <h1>Lesson {item.lesson}. {item.title}</h1>
+                        <p>Doc: {item.content}</p>
+                        <p>Date: {item.date}</p>
+                    </div>
+                ))
+            }
+          </div>
+        );
+    }
 }
 
 export default App;
