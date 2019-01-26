@@ -26,5 +26,6 @@ def markdown_to_html(doc):
     
     
 def text_to_html(text):
-    p = Popen('pandoc', stdin=PIPE, stdout=PIPE)
+    p = Popen('cat', stdin=PIPE, stdout=PIPE)
     return p.communicate(text)[0]
+
